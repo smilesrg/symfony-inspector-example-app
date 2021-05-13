@@ -117,6 +117,9 @@
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.2"
     },
+    "inspector-apm/inspector-php": {
+        "version": "3.6.0"
+    },
     "inspector-apm/inspector-symfony": {
         "version": "0.0.2"
     },

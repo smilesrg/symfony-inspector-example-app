@@ -132,9 +132,6 @@ class BlogController extends AbstractController
      */
     public function edit(Request $request, Post $post): Response
     {
-        dump($this->get('doctrine')->getManager()->getConnection()
-            ->getConfiguration()->getSqlLogger());
-        die;
         $form = $this->createForm(PostType::class, $post);
         $form->handleRequest($request);
 

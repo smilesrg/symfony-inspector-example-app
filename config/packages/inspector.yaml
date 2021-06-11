@@ -3,7 +3,7 @@ inspector:
     url: https://ingest.inspector.dev
     enabled: true
     unhandled_exceptions: true
-    query: false
+    query: true
     query_bindings: true
     user: true
     transport: async
@@ -21,11 +21,4 @@ inspector:
         - '_profiler_exception'
         - '_profiler_exception_css'
     ignore_commands: []
-
-services:
-    Inspector\Symfony\Bundle\Command\InspectorTestCommand:
-        arguments:
-          [ '@inspector', '@logger', '@inspector.configuration.internal' ]
-        tags:
-            - { name: 'console.command', command: 'inspector:test' }
 

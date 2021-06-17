@@ -8,7 +8,7 @@ inspector:
     user: true
     transport: async
     server_sampling_ratio: 0
-    ignore_urls:
+    ignore_routes:
         - '_wdt'
         - '_profiler'
         - '_profiler_home'
@@ -20,5 +20,13 @@ inspector:
         - '_profiler_router'
         - '_profiler_exception'
         - '_profiler_exception_css'
-    ignore_commands: []
-
+    ignore_commands:
+        - 'debug:autowiring'
+        - 'debug:config'
+        - 'debug:container'
+        - 'debug:event-dispatcher'
+        - 'debug:form'
+        - 'debug:router'
+        - 'debug:translation'
+        - 'debug:twig'
+        - 'debug:validator'
